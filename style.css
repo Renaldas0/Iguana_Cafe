@@ -21,15 +21,12 @@ html {
 
 body {
     font-family: 'Libre Baskerville', serif;
-    background-color: #08352e;
-}
-
-.sticky {
-    border-bottom: 1px solid #f9c700;
+    background-color: #00120f;
 }
 
 .navbar {
-    background-color: #fff !important;
+    background-color: transparent !important;
+    z-index: 20;
 }
 
 .logo-container {
@@ -57,14 +54,13 @@ body {
 .list-item a {
     padding: 0 10px;
     text-decoration: none;
-    color: #08352e;
+    color: #fff;
     font-size: 0.9rem;
     transition: color .5s ease, box-shadow .4s ease;
 }
 
 .list-item a:hover {
     color: #f9c700;
-    box-shadow: inset 120px 0 0 0 #08352e;
 }
 
 img {
@@ -81,6 +77,7 @@ img {
     background-size: cover;
     min-height: 80vh;
     position: relative;
+    top: -80px;
     text-align: center;
     color: white;
     display: flex;
@@ -96,7 +93,7 @@ img {
     font-size: 1.2rem;
     border-radius: 3rem;
     padding: .5rem 1rem;
-    background-color: #08352e;
+    background-color: #062924;
     color: #f9c700;
     float: right;
     transition: .5s ease;
@@ -110,11 +107,6 @@ img {
 .menu-btn {
     text-decoration: none;
     color: #f9c700;
-}
-
-.motto-para,
-.menu-btn {
-    display: inline-block;
 }
 
 #menu {
@@ -160,10 +152,6 @@ img {
 }
 
 /*=======================================Info Tables===========================*/
-
-.contact {
-    background: #062924;
-}
 
 .contact-table {
     min-height: 300px;
@@ -222,9 +210,9 @@ img {
 }
 
 footer {
-    background: #062924;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 2rem;
     color: #f9c700;
@@ -236,11 +224,11 @@ footer {
     width: fit-content;
     color: #f9c700;
     transition: .5s ease;
+    margin-left: auto;
 }
 
 .to-top-btn:hover {
     border: 1px solid #f9c700;
-    box-shadow: 0 0 .5rem #f9c700;
 }
 
 @media screen and (max-width:448px) {
